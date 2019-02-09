@@ -9,10 +9,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <title>Sample1</title>
+
+    <style>
+      .imc-layout--about {
+        height: 700px;
+        background: #f2f8fd url(https://d16p2y4jmu3i9o.cloudfront.net/v2/about/back_keyv.png) center bottom no-repeat;
+        background-size: contain;
+        min-width: 1060px;
+      }
+    </style>
   </head>
   <body>
+    <!-- ヘッダー -->
     <header class="bg-light py-3">
-      <div class="container">
+      <div class="container text-right">
         <a href="">記載希望の方はこちら</a>
       </div>
       <div class="container">
@@ -35,20 +45,35 @@
 
       </div>
     </header>
+
     <main class="bg-warning">
-      <div class="container bg-primary">
-        トップページ > sample1とは
-      </div>
-      <div class="container bg-secondary">
-        トップ画像
-      </div>
-      <div class="container bg-light">
+      <!-- トップページ -->
+      <section class="imc-layout--about">
+        <div class="container">
+          トップページ > sample1とは
+        </div>
+        <div class="container">
+          <div class="text-center">
+            <img src="https://d16p2y4jmu3i9o.cloudfront.net/v2/about/logo_imitsu_large.png" class="img-fluid" alt="">
+            <h1 class="">キャッチコピー</h1>
+            <p>
+              説明 説明 説明 説明 説明 説明 説明 説明 説明 <br>
+              説明 説明 説明 説明 説明 説明 説明 説明 説明
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- メニュー -->
+      <section class="container bg-light">
         メニュー
-      </div>
-      <div class="container bg-info">
+      </section>
+      <!-- 詳細情報 -->
+      <section class="container bg-info">
         詳細情報
-      </div>
+      </section>
     </main>
+
+    <!-- フッター -->
     <footer class="bg-light">
       <div class="container">
         フッター
